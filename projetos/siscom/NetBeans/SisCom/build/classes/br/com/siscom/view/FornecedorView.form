@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="siscomjavaPU"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.persistence.Query" name="query">
+      <Properties>
+        <Property name="query" type="java.lang.String" value="SELECT f FROM Fornecedores f"/>
+        <Property name="entityManager" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$EMProperty$EntityManagerEditor">
+          <ComponentRef name="entityManager"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="list">
+      <Properties>
+        <Property name="query" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$QueryBeanProperty$QueryEditor">
+          <ComponentRef name="query"/>
+        </Property>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.siscom.view.Fornecedores&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="TipoPessoabuttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="468" max="32767" attributes="0"/>
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="masterScrollPane" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="masterScrollPane" pref="94" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="masterTable">
+              <Properties>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="150" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="50" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
+                  <Subbinding sourcePath="${fornecNome}">
+                    <BindingParameter name="NAME" value="Nome do Fornecedor"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecCpf}">
+                    <BindingParameter name="NAME" value="Cpf"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecRg}">
+                    <BindingParameter name="NAME" value="Fornec Rg"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecRgOrgao}">
+                    <BindingParameter name="NAME" value="Fornec Rg Orgao"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecCnpj}">
+                    <BindingParameter name="NAME" value="Fornec Cnpj"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecedorTipo}">
+                    <BindingParameter name="NAME" value="Fornecedor Tipo"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Character.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecEndereco}">
+                    <BindingParameter name="NAME" value="Fornec Endereco"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecBairro}">
+                    <BindingParameter name="NAME" value="Fornec Bairro"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecCidade}">
+                    <BindingParameter name="NAME" value="Fornec Cidade"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecUf}">
+                    <BindingParameter name="NAME" value="Fornec Uf"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecCep}">
+                    <BindingParameter name="NAME" value="Fornec Cep"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecEmail}">
+                    <BindingParameter name="NAME" value="Fornec Email"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecSite}">
+                    <BindingParameter name="NAME" value="Fornec Site"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecFone}">
+                    <BindingParameter name="NAME" value="Fornec Fone"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecCelular}">
+                    <BindingParameter name="NAME" value="Fornec Celular"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${fornecFax}">
+                    <BindingParameter name="NAME" value="Fornec Fax"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="fornecNomeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCpfLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCnpjLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecEnderecoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCidadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecEmailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecFoneLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="fornecCidadeField" min="-2" pref="223" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  <Component id="fornecUfLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="fornecUfField" min="-2" pref="31" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="fornecEnderecoField" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="fornecCPFField" min="-2" pref="161" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="fornecRgLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="fornecRgField" min="-2" pref="154" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="fornecRgOrgaoLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="fornecEmailField" min="-2" pref="283" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="fornecSiteLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="fornecRgOrgaoField" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fornecBairroLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fornecCepLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fornecSiteField" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fornecBairroField" pref="218" max="32767" attributes="0"/>
+                                      <Component id="fornCepField" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="fornecFoneField" min="-2" pref="177" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="fornecCelularLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="fornecCelularField" min="-2" pref="177" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="fornecFaxLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="fornecFaxField" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="fornecNomeField" min="-2" pref="251" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="fornecedorTipoLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Component id="PessoaFisicaRadioButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="PessoaJuridicaRadioButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="fornecCnpjFField" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecNomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecNomeField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecedorTipoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PessoaFisicaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PessoaJuridicaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecCpfLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecRgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecRgField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecRgOrgaoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecRgOrgaoField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCPFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="fornecCnpjLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCnpjFField" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecEnderecoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecEnderecoField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecBairroLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecBairroField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecCidadeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCidadeField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecUfLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecUfField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCepLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornCepField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecEmailField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecSiteField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecSiteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="fornecFoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecFoneField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCelularLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecCelularField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecFaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fornecFaxField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="fornecedorTipoLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipo de pessoa:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecNomeField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecNome}" target="fornecNomeField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecNomeField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecBairroLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bairro"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecEnderecoField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecEndereco}" target="fornecEnderecoField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecEnderecoField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecFaxField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecFax}" target="fornecFaxField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecFaxField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecCidadeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cidade:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecFaxLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fornec Fax:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecNomeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nome do Fornecedor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecBairroField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecBairro}" target="fornecBairroField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecBairroField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecUfField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecUf}" target="fornecUfField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecUfField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecCpfLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CPF "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecRgOrgaoField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecRgOrgao}" target="fornecRgOrgaoField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="PessoaFisicaRadioButton" sourcePath="${selected}" target="fornecRgOrgaoField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecCelularField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecCelular}" target="fornecCelularField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecCelularField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecCelularLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Celular:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecRgLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="RG:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecRgOrgaoLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xd3;rg&#xe3;o"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecCepLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cep:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecCnpjLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cnpj:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecFoneField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecFone}" target="fornecFoneField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecFoneField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecRgField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecRg}" target="fornecRgField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="PessoaFisicaRadioButton" sourcePath="${selected}" target="fornecRgField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecEmailLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Email:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecUfLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="UF"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecCidadeField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecCidade}" target="fornecCidadeField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecCidadeField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecFoneLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fone:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecEnderecoLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Endereco:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecEmailField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecEmail}" target="fornecEmailField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecEmailField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fornecSiteField">
+          <BindingProperties>
+            <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.fornecSite}" target="fornecSiteField" targetPath="text" updateStrategy="0" immediately="false">
+              <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornecSiteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="PessoaFisicaRadioButton">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="TipoPessoabuttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pessoa F&#xed;sica"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="selected" source="masterTable" sourcePath="${selectedElement.fornecedorTipo}" target="PessoaFisicaRadioButton" targetPath="selected" updateStrategy="0" immediately="false">
+              <Property name="converter" type="org.jdesktop.beansbinding.Converter" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                <Connection code="new br.com.siscom.bean.BooleanConverter()" type="code"/>
+              </Property>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="PessoaFisicaRadioButton" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PessoaFisicaRadioButtonActionPerformed"/>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="PessoaFisicaRadioButtonPropertyChange"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="PessoaJuridicaRadioButton">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="TipoPessoabuttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pessoa Jur&#xed;dica"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="selected" source="masterTable" sourcePath="${selectedElement.fornecedorTipo}" target="PessoaJuridicaRadioButton" targetPath="selected" updateStrategy="0" immediately="false">
+              <Property name="converter" type="org.jdesktop.beansbinding.Converter" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                <Connection code="new br.com.siscom.bean.BooleanConverterInvert()" type="code"/>
+              </Property>
+            </BindingProperty>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="PessoaJuridicaRadioButton" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="fornecSiteLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Site do Fornecedor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="fornecCPFField">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="###.###.###-##" subtype="-1" type="5"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="value" source="masterTable" sourcePath="${selectedElement.fornecCpf}" target="fornecCPFField" targetPath="value" updateStrategy="0" immediately="false"/>
+            <BindingProperty name="enabled" source="PessoaFisicaRadioButton" sourcePath="${selected}" target="fornecCPFField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="fornecCnpjFField">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##.###.###/####-##" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="value" source="masterTable" sourcePath="${selectedElement_IGNORE_ADJUSTING.fornecCnpj}" target="fornecCnpjFField" targetPath="value" updateStrategy="0" immediately="false"/>
+            <BindingProperty name="enabled" source="PessoaJuridicaRadioButton" sourcePath="${selected}" target="fornecCnpjFField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="fornCepField">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="#####-###" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="value" source="masterTable" sourcePath="${selectedElement.fornecCep}" target="fornCepField" targetPath="value" updateStrategy="0" immediately="false"/>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fornCepField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="saveButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="refreshButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="newButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="saveButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="refreshButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Refresh"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="newButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="New"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="deleteButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="deleteButton" targetPath="enabled" updateStrategy="1" immediately="false"/>
+          </BindingProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
